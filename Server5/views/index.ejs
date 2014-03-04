@@ -3,7 +3,40 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="/lib/javascripts/jquery.min.js" />
+    <script rel="text/javascript" src="/lib/javascripts/jquery.min.js"></script>
+    <script rel="text/javascript" src="/lib/javascripts/faye.js"></script>
+    <script>
+
+      //creating new client
+      var client = new Faye.Client('http://localhost:3000/faye', {
+        timeout : 120
+      });
+
+      //Subsribing to channel
+      client.subscribe('/channel', function(message){
+        $("#messages").append("<p>" + message + "</p>");
+      });
+
+      //Creating an ID
+      function s4() {
+        return Math.floor((1 + Math.random()) * 0x10000)
+                   .toString(16)
+                   .substring(1);
+      };
+      function guid() {
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+               s4() + '-' + s4() + s4() + s4();
+      }
+      x = guid();
+
+      //Publishing messages to everyone
+      setInterval(function(){
+        client.publish("/channel", "This is spartaaaa " + x, function(err){
+            console.log( "Error ",err );
+        });
+      }, 2000);
+      
+    </script>
   </head>
   <body>
     <h1><%= title %></h1>
