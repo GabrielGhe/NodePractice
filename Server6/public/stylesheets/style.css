@@ -13,13 +13,15 @@ body {
 	margin:50px;
 	border:1px solid black;
 
-	height: -webkit-calc(100% - 100px);
+	/*height: -webkit-calc(100% - 100px);
 	height:    -moz-calc(100% - 100px);
 	height: 	 -o-calc(100% - 100px);
-	height: 		calc(100% - 100px);
+	height: 		calc(100% - 100px);*/
+	height: 500px;
 
-	width: -webkit-calc(100% - 100px);
+	/*width: -webkit-calc(100% - 100px);
 	width:    -moz-calc(100% - 100px);
 	width: 	 	-o-calc(100% - 100px);
-	width: 		   calc(100% - 100px);
+	width: 		   calc(100% - 100px);*/
+	width: 500px;
 }

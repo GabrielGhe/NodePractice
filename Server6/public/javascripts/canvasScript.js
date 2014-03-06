@@ -9,13 +9,16 @@ $(document).ready(function(){
 
 	//Events
 	
+	//http://stackoverflow.com/questions/5751458/getting-correct-mouse-position-in-a-css-scaled-canvas
+	
+
 	/**
 	 * Mousemove
 	 * @param  {Event} e 
 	 */
-	imageView.mousemove(function(e){
-		var x = e.offsetX
-		var y = e.offsetY;
+	imageView.mousemove(function(ev){
+		var x = ev.pageX - imageView.offset().left;
+		var y = ev.pageY - imageView.offset().top;
 
 		if(!started){
 			//place initial position
