@@ -6,35 +6,61 @@
     <script rel="text/javascript" src="/lib/javascripts/jquery.min.js"></script>
     <script rel="text/javascript" src="/lib/javascripts/faye.js"></script>
     <script>
+      var client;
+      var myid;
+      $(document).ready(function(){
 
-      //creating new client
-      var client = new Faye.Client('http://localhost:3000/faye', {
-        timeout : 120
-      });
+        /**
+         * [s4 description]
+         * @return {[type]} [description]
+         */
+        function s4() {
+          return Math.floor((1 + Math.random()) * 0x10000)
+                     .toString(16)
+                     .substring(1);
+        };
 
-      //Subsribing to channel
-      client.subscribe('/channel', function(message){
-        $("#messages").append("<p>" + message + "</p>");
-      });
+        /**
+         * [guid description]
+         * @return {[type]} [description]
+         */
+        function guid() {
+          return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                 s4() + '-' + s4() + s4() + s4();
+        }
 
-      //Creating an ID
-      function s4() {
-        return Math.floor((1 + Math.random()) * 0x10000)
-                   .toString(16)
-                   .substring(1);
-      };
-      function guid() {
-        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-               s4() + '-' + s4() + s4() + s4();
-      }
-      x = guid();
-
-      //Publishing messages to everyone
-      setInterval(function(){
-        client.publish("/channel", "This is spartaaaa " + x, function(err){
-            console.log( "Error ",err );
+        //Publishing messages to everyone
+        $("#send").click(function(){
+          var val = $("#tosend").val();
+          console.log(val);
+          if(val.trim() != ""){
+            client.publish("/channel", myid + ": " +val, function(err){
+              console.log( "Error ",err );
+            });
+            $("#tosend").val("");
+          }
         });
-      }, 2000);
+
+        /**
+         * [Init description]
+         */
+        function Init(){
+          myid = guid();
+
+          //creating new client
+          client = new Faye.Client('http://localhost:3000/faye', {
+            timeout : 120
+          });
+
+          //Subsribing to channel
+          client.subscribe('/channel', function(message){
+            $("#messages").append("<p>" + message + "</p>");
+          });
+        }
+        
+        //Initialize everything
+        Init();
+      });
       
     </script>
   </head>
@@ -42,6 +68,9 @@
     <h1><%= title %></h1>
     <p>Your post will be displayed under this paragraph</p>
     
+    <input id="tosend" type="text" style="width:500px" placeholder="Type your message here" />
+    <button id="send">Send</button>
+
     <!-- Faye messages -->
     <div id="messages">
 
