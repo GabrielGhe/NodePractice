@@ -1,8 +1,25 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
-a {
-  color: #00B7FF;
+#container {
+	position: relative;
+	height:100%;
+	width:100%;
+}
+
+#imageView {
+	margin:50px;
+	background-color: lightgray;
+
+	height: -webkit-calc(100% - 100px);
+	height:    -moz-calc(100% - 100px);
+	height: 	 -o-calc(100% - 100px);
+	height: 		calc(100% - 100px);
+
+	width: -webkit-calc(100% - 100px);
+	width:    -moz-calc(100% - 100px);
+	width: 	 	-o-calc(100% - 100px);
+	width: 		   calc(100% - 100px);
 }
