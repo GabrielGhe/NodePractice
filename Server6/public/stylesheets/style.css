@@ -11,7 +11,7 @@ body {
 
 #imageView {
 	margin:50px;
-	background-color: lightgray;
+	border:1px solid black;
 
 	height: -webkit-calc(100% - 100px);
 	height:    -moz-calc(100% - 100px);
