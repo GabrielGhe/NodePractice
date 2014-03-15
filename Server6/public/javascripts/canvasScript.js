@@ -9,12 +9,10 @@ $(document).ready(function(){
 	tool = new pencil();
 
 	//Events
-	
-	//http://stackoverflow.com/questions/5751458/getting-correct-mouse-position-in-a-css-scaled-canvas
-
 	imageView.mousemove(cursorEvent);
 	imageView.mousedown(cursorEvent);
 	imageView.mouseup(cursorEvent);
+	//http://stackoverflow.com/questions/5751458/getting-correct-mouse-position-in-a-css-scaled-canvas
 
 	/**
 	 * Does everything
@@ -45,14 +43,12 @@ function pencil(){
 	    };
 	};
 
-
 	//Mousedown
 	this.mousedown = function(x, y){
 		context.beginPath();
 		context.moveTo(x, y);
 		tool.started = true;
 	};
-
 
 	//mousemove
 	this.mousemove = function(x, y){
