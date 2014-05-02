@@ -1,0 +1,42 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+li {
+	cursor:pointer;
+}
+
+/* animation for entering and leaving */
+.repeat-item.ng-enter,	
+.repeat-item.ng-leave {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+/* animation for entering and left */
+.repeat-item.ng-enter,
+.repeat-item.ng-leave.ng-leave-active {
+  opacity:0;
+}
+/* animation for leaving and entered */
+.repeat-item.ng-leave,
+.repeat-item.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+
+/* Animation with keyframes */
+.repeat-item2.ng-enter {
+	-webkit-animation:1s anim;
+			animation:1s anim;
+}
+@-webkit-keyframes anim {
+	0%	{opacity:0;}
+	20%	{opacity:0.4;}
+	100%{opacity:1;}
+}
+@keyframes anim {
+	0%	{opacity:0;}
+	20%	{opacity:0.4;}
+	100%{opacity:1;}
+}

@@ -1,0 +1,16 @@
+<!-- Container -->
+<div id="container">
+
+  <p>
+    {{test1}}
+  </p>
+
+  <ul>
+    <li ng-repeat="test in test2" class="repeat-item" ng-click="remove($index)">{{test}}</li>
+  </ul>
+
+  <input placeholder="Click on element to remove it" ng-model="test3" />
+  <button ng-click="add(test3)">Add</button>
+
+</div>
+<!-- END Container -->
