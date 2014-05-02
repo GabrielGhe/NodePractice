@@ -11,6 +11,7 @@ $(document).ready(function(){
 		value: generateCode(),
 		lineNumbers: true,
 		matchBrackets: true,
-		mode:  "javascript"
+		mode:  "javascript",
+		theme: "monokai"
 	});
 });
