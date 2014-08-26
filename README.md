@@ -3,10 +3,13 @@ NodePractice
 
 Practicing node
 
-<ol>
-  <li>Server2 = Simple NodeJS server that sends a message at an interval</li>
-  <li>Server3 = Express server that uses CodeMirror and routins</li>
-  <li>Server4 = Express + EJS server</li>
-  <li>Server5 = Express + EJS + Faye (pub/sub)</li>
-  <li>Server6 = Express + EJS + Faye + Html5 canvas</li>
-</ol>
+<ul>
+  <li><b>Hello World</b> = Simple NodeJS server that wait's a bit before sending back a response</li>
+  <li><b>NodeExpress1</b> = Express server... very basic template</li>
+  <li><b>Server2</b> = Simple NodeJS server that sends a message at an interval</li>
+  <li><b>Server3</b> = Express server that uses CodeMirror and routins</li>
+  <li><b>Server4</b> = Express + EJS</li>
+  <li><b>Server5</b> = Express + EJS + Faye (pub/sub)</li>
+  <li><b>Server6</b> = Express + EJS + Faye + Html5 canvas</li>
+  <li><b>Server7</b> = Express + EJS + tests (they're awesome)</li>
+</ul>
