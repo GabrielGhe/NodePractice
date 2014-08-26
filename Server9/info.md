@@ -55,4 +55,9 @@ app.use(lessMiddleware(__dirname + '/public'));
 // this order is important
 app.use(express.static(__dirname + '/public'));
 
+
+// Now when you create .less files, a matching .css file gets created when you save
+// So you can add the link to that css file in your html like you normally would and voila
+// example in this project folder as usual.
+
 ```
