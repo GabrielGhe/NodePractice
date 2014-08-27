@@ -40,9 +40,8 @@ module.exports = function(grunt) {
     // ########## your tasks go here ##############
   });
   
-  // Register a task to run existing tasks in a specific order
-  grunt.registerTask('taskname', ['concat', 'uglify', 'some-other-task']);
   // now "grunt taskname" will run concat, uglify, some-other-task in that order
+  grunt.registerTask('taskname', ['concat', 'uglify', 'some-other-task']);
 };
 ```
 
