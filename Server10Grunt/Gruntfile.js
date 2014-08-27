@@ -5,7 +5,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         
-
         concat: {
             dist: {
                 src: ['public/javascripts/*.js'],
@@ -16,11 +15,23 @@ module.exports = function(grunt) {
 
         clean: {
             build: {
-                src: ["public/javascripts/built.js"]
+                src: ["public/javascripts/built.js", "public/javascripts/built.min.js"]
             }
-        }//End clean
+        },//End clean
+
+
+        uglify: {
+            options: {
+                mangle: true
+            },
+            my_target: {
+                files: {
+                    'public/javascripts/built.min.js': ["public/javascripts/built.js"]
+                }
+            }
+        }//End uglify
 
     });//End initConfig
 
-    grunt.registerTask('default', ['clean', 'concat']);
+    grunt.registerTask('default', ['clean', 'concat', 'uglify']);
 };
