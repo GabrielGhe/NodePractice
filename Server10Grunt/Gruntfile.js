@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             build: {
                 src: ["public/javascripts/built.js"]
             }
-        }
+        }//End clean
 
     });//End initConfig
 
