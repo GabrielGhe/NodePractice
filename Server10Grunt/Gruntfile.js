@@ -14,5 +14,13 @@ module.exports = function(grunt) {
         },//End concat
 
 
+        clean: {
+            build: {
+                src: ["public/javascripts/built.js"]
+            }
+        }
+
     });//End initConfig
+
+    grunt.registerTask('default', ['clean', 'concat']);
 };
