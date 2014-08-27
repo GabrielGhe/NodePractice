@@ -22,7 +22,10 @@ module.exports = function(grunt) {
 
         uglify: {
             options: {
-                mangle: true
+                mangle: {
+                    toplevel: true
+                },
+                compress: true
             },
             my_target: {
                 files: {
