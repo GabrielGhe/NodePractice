@@ -10,6 +10,8 @@
     "ejs": "*"
   },
   "devDependencies": {
-    "load-grunt-tasks": "~0.6.0"
+    "load-grunt-tasks": "~0.6.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5.0"
   }
 }
