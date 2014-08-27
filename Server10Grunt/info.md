@@ -8,6 +8,7 @@ NodeJS with Grunt
 
 <p>
   In this project, I used 2 js files <a href="https://github.com/GabrielGhe/NodePractice/blob/master/Server10Grunt/public/javascripts/index.js">index.js</a> and <a href="https://github.com/GabrielGhe/NodePractice/blob/master/Server10Grunt/public/javascripts/index2.js">index2.js</a> . I concatinated them and saved the result to <a href="https://github.com/GabrielGhe/NodePractice/blob/master/Server10Grunt/public/javascripts/built.js">built.js</a> and then I uglified that file and saved the result to <a href="https://github.com/GabrielGhe/NodePractice/blob/master/Server10Grunt/public/javascripts/built.min.js">built.min.js</a>
+  I also minimized the css using cssmin.
 </p>
 
 <h3>Installation</h3>
@@ -20,6 +21,7 @@ npm install --save-dev load-grunt-tasks
 npm install --save-dev grunt-contrib-uglify
 npm install --save-dev grunt-contrib-clean
 npm install --save-dev grunt-contrib-concat
+npm install --save-dev grunt-contrib-cssmin
 ```
 
 <p>Step 2</p>
@@ -53,12 +55,12 @@ grunt.initConfig({
           src: ['public/javascripts/*.js'],
           dest: 'public/javascripts/built.js',
       },
-  },//End concat
+  },// End concat
   clean: {
       build: {
           src: ["public/javascripts/built.js", "public/javascripts/built.min.js"]
       }
-  },//End clean
+  },// End clean
   uglify: {
       options: {
           mangle: {
@@ -71,6 +73,17 @@ grunt.initConfig({
               'public/javascripts/built.min.js': ["public/javascripts/built.js"]
           }
       }
-  }//End uglify
+  },// End uglify
+  cssmin: {
+      options: {
+        files: [{
+            expand: true,
+            cwd: 'public/stylesheets/',
+            src: ['style.css'],
+            dest: 'public/stylesheets/',
+            ext: '.min.css'
+        }]
+      }
+  }// End cssmin
 });
 ```
