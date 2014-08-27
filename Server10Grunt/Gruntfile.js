@@ -8,14 +8,18 @@ module.exports = function(grunt) {
               src: ['public/javascripts/*.js'],
               dest: 'public/javascripts/built.js',
           },
-      },//End concat
+      },// End concat
 
 
       clean: {
           build: {
-              src: ["public/javascripts/built.js", "public/javascripts/built.min.js"]
+              src: [
+                "public/javascripts/built.js",
+                "public/javascripts/built.min.js",
+                "public/stylesheets/style.min.css"
+              ]
           }
-      },//End clean
+      },// End clean
 
 
       uglify: {
@@ -30,9 +34,21 @@ module.exports = function(grunt) {
                   'public/javascripts/built.min.js': ["public/javascripts/built.js"]
               }
           }
-      }//End uglify
+      },// End uglify
 
-  });//End initConfig
+      cssmin: {
+          options: {
+            files: [{
+                expand: true,
+                cwd: 'public/stylesheets/',
+                src: ['style.css'],
+                dest: 'public/stylesheets/',
+                ext: '.min.css'
+            }]
+          }
+      }// End cssmin
 
-  grunt.registerTask('default', ['clean', 'concat', 'uglify']);
+  });// End initConfig
+
+  grunt.registerTask('default', ['clean', 'concat', 'uglify', 'cssmin']);
 };
