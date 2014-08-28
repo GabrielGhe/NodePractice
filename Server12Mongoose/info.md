@@ -63,3 +63,16 @@ testModelSchema.statics.customFunctionName = function(){
 module.exports = mongoose.model('testModel', testModelSchema, 'testModel');
 ```
 
+<p>Step 4</p>
+```javascript
+// Now you can require the model
+var testModel = require("./model/testModel");
+
+// and use mongoose functions on it
+testModel.find({}, function(err, testModels){
+    console.log("Found this many", testModels.length);
+});
+
+// or custom functions
+testModelSchema.customFunctionName();
+```
