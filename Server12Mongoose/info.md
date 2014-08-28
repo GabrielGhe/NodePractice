@@ -11,7 +11,7 @@ NodeJS with Mongoose
 ```shell
 ### in the command line ###
 
-#install mongodb using homebrew
+# install mongodb using homebrew
 brew install mongodb
 
 # start up mongodb
