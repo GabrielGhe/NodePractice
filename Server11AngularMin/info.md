@@ -8,8 +8,10 @@ NodeJS with Angular Minification
 <h4>Installation</h4>
 
 <p>Step 1</p>
-```javascript
-// Get the dependencies
+```shell
+### Command Line ###
+
+# Get the dependencies
 npm install -g grunt-cli
 
 npm install --save-dev load-grunt-tasks
@@ -19,6 +21,8 @@ npm install --save-dev grunt-contrib-uglify
 
 <p>Step 2</p>
 ```javascript
+// ### in public/javascripts/index.js ###
+
 // Make sure that your angular syntax is like this
 MyApp.controller("ThingController", ["$scope",
     function($scope){
@@ -29,7 +33,7 @@ MyApp.controller("ThingController", ["$scope",
 
 <p>Step 3</p>
 ```javascript
-// in Gruntfile.js
+// ### in Gruntfile.js ###
 "use strict";
 
 module.exports = function(grunt){
@@ -63,6 +67,6 @@ module.exports = function(grunt){
 
 <p>Step 4</p>
 ```shell
-# In your command line
+### Command Line ###
 $ grunt
 ```
