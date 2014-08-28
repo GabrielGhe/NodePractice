@@ -1,8 +1,10 @@
+var testModel = require('../model/testModel');
 
 /*
  * GET home page.
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+    testModel.customFunctionName();
+    res.render('index', { title: 'Express' });
 };
