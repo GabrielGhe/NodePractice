@@ -21,7 +21,7 @@ mongod
 mongo
 
 # install mongoose
-npm install mongoose
+npm install --save mongoose
 ```
 
 <p>Step 2</p>
