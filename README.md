@@ -53,7 +53,7 @@ NodePractice
   </li>
 </ul>
 
-<h2>Dev Tips</h2>
+<h3>Dev Tips</h3>
 <p>
   I recommend doing these things before you start, it will make coding node apps easier
 </p>
