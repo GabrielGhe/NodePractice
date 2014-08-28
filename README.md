@@ -52,3 +52,17 @@ NodePractice
     <b>Server10Grunt</b> = Grunt + js uglifying + css minification
   </li>
 </ul>
+
+<h2>Dev Tips</h2>
+<p>
+  I recommend doing these things before you start, it will make coding node apps easier
+</p>
+<ul>
+  <li><a href="http://code-worrier.com/blog/autocomplete-git/">Command Line git autocomplete</a></li>
+  <li><a href="http://code-worrier.com/blog/git-branch-in-bash-prompt/">See what branch you're on in Command Line</a></li>
+</ul>
+
+<p>put the following in you terminal (or your .bash_profile) for awesomeness </p>
+```shell
+PS1="\\[\e[1;32m\]\h\[\e[1;33m\]:\W\[\033[1;31m\]\$(__git_ps1)\e[1;37m\]\\n\$ "
+```
