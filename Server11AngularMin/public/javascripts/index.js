@@ -1,5 +1,6 @@
-var MyApp = angular.module("MyApp", ["ngRoute"]);
+"use strict";
 
+var MyApp = angular.module("MyApp", ["ngRoute"]);
 
 MyApp.config(["$routeProvider", "$locationProvider",
     function($routeProvider, $locationProvider){
@@ -15,9 +16,8 @@ MyApp.config(["$routeProvider", "$locationProvider",
     }
 ]);
 
-
 MyApp.controller("ThingController", ["$scope",
     function($scope){
-        $scope.something = "It works!";
+        $scope.something = "Minification of angular apps works!";
     }
 ]);
