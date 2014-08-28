@@ -13,8 +13,10 @@ NodeJS with Grunt
 
 <h3>Installation</h3>
 <p>Step 1</p>
-```javascript
-// Get the right packages (command line)
+```shell
+### Command Line ###
+
+# Get the right packages
 npm install -g grunt-cli
 
 npm install --save-dev load-grunt-tasks
@@ -25,14 +27,17 @@ npm install --save-dev grunt-contrib-cssmin
 ```
 
 <p>Step 2</p>
-```javascript
-// Create a Gruntfile.js
+```shell
+### Command Line ###
+
+# Create a Gruntfile.js
 touch Gruntfile.js
 ```
 
 <p>Step 3</p>
 ```javascript
-// Inside Gruntfile.js
+// ### in Gruntfile.js ###
+
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
@@ -47,6 +52,8 @@ module.exports = function(grunt) {
 
 <p>Step 4</p>
 ```javascript
+// ### in Gruntfile.js ###
+
 // The initConfig would look something like this
 grunt.initConfig({
   concat: {
