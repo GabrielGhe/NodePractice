@@ -1,7 +1,12 @@
 NodePractice
 ============
 
-Practicing node
+<p>
+  Practicing node and some npm modules.
+</p>
+<p>
+  Check out the example projects inside each folder. Some projects have a info.md file that describes how to install/use the modules.
+</p>
 
 <ul>
   <li>
@@ -41,5 +46,9 @@ Practicing node
   
   <li>
     <b>Server9</b> = Less-Middleware
+  </li>
+  
+  <li>
+    <b>Server10Grunt</b> = Grunt + js uglifying + css minification
   </li>
 </ul>
