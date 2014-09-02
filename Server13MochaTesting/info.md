@@ -25,3 +25,34 @@ npm install --save-dev chai-as-promised
 npm install --save-dev mocha
 npm install --save-dev supertest-as-promised
 ```
+
+<p>Step 2</p>
+```shell
+### Command Line ###
+
+# Create a Gruntfile.js
+touch Gruntfile.js
+```
+
+<p>Step 3</p>
+```javascript
+// ### in Gruntfile.js ###
+
+module.exports = function(grunt) {
+
+  require('load-grunt-tasks')(grunt);
+  grunt.initConfig({
+      mochaTest: {
+            test: {
+                options: {
+                    reporter: 'spec'
+                },
+                src: ['test/**/*.js']
+            }
+        }
+  });
+  
+  // now "grunt" will run our tests
+  grunt.registerTask('default', ['mochaTest']);
+};
+```
