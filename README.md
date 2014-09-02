@@ -37,7 +37,7 @@ NodePractice
   </li>
   
   <li>
-    <b>Server7AngularKarma</b> = Express + EJS + tests (they're awesome)
+    <b>Server7AngularKarma</b> = Express + EJS + angular tests using karma (they're awesome)
   </li>
   
   <li>
