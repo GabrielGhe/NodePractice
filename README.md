@@ -37,19 +37,27 @@ NodePractice
   </li>
   
   <li>
-    <b>Server7</b> = Express + EJS + tests (they're awesome)
+    <b>Server7AngularKarma</b> = Express + EJS + tests (they're awesome)
   </li>
   
   <li>
-    <b>Server8</b> = Bower
+    <b>Server8Bower</b> = Bower
   </li>
   
   <li>
-    <b>Server9</b> = Less-Middleware
+    <b>Server9Less</b> = Less-Middleware
   </li>
   
   <li>
     <b>Server10Grunt</b> = Grunt + js uglifying + css minification
+  </li>
+  
+  <li>
+    <b>Server11AngularMin</b> = minification of angularjs
+  </li>
+  
+  <li>
+    <b>Server12Mongoose</b> = MongoDB module called mongoose
   </li>
 </ul>
 
