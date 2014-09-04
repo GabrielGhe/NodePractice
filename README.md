@@ -37,31 +37,35 @@ NodePractice
   </li>
   
   <li>
-    <b>Server7AngularKarma</b> = Express + EJS + angular tests using karma (they're awesome)
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server7AngularKarma">Server7AngularKarma</a></b> = Express + EJS + angular tests using karma (they're awesome)
   </li>
   
   <li>
-    <b>Server8Bower</b> = Bower
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server8Bower">Server8Bower</a></b> = Bower
   </li>
   
   <li>
-    <b>Server9Less</b> = Less-Middleware
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server9Less">Server9Less</a></b> = Less-Middleware
   </li>
   
   <li>
-    <b>Server10Grunt</b> = Grunt + js uglifying + css minification
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server10Grunt">Server10Grunt</a></b> = Grunt + js uglifying + css minification
   </li>
   
   <li>
-    <b>Server11AngularMin</b> = minification of angularjs
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server11AngularMin">Server11AngularMin</a></b> = minification of angularjs
   </li>
   
   <li>
-    <b>Server12Mongoose</b> = MongoDB module called mongoose
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server12Mongoose">Server12Mongoose</a></b> = MongoDB module called mongoose
   </li>
   
   <li>
-    <b>Server13MochaTesting</b> = Grunt + Mocha + chai + supertest
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server13MochaTesting">Server13MochaTesting</a></b> = Grunt + Mocha + chai + supertest
+  </li>
+  
+  <li>
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server14Browserify">Server14Browserify</a></b> = Grunt + browserify
   </li>
   
 </ul>
