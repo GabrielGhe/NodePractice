@@ -105,6 +105,6 @@ console.log(unique(data));
 ### in Command Line ###
 
 # running this will generate a build.js file that contains all the js you need (jquery + uniq + index.js)
-# simply make a script that with that file as the src to use it
+# to use it, simply make a script with that file as the src
 grunt
 ```
