@@ -16,7 +16,6 @@
     "grunt-browserify": "~3.0.1",
     "bower": "~1.3.9",
     "grunt-contrib-clean": "~0.6.0",
-    "browserify": "~5.11.0",
     "debowerify": "~0.8.1"
   },
   "browserify" : {

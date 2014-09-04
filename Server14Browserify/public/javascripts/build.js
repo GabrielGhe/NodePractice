@@ -9250,6 +9250,8 @@ return jQuery;
 }));
 
 },{}],3:[function(require,module,exports){
+"use strict";
+
 var unique = require('uniq');
 var $ = require("./../bower_components/jquery/dist/jquery.js");
 
