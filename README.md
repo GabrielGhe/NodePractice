@@ -37,7 +37,7 @@ NodePractice
   </li>
   
   <li>
-    <b>Server7AngularKarma</b> = Express + EJS + tests (they're awesome)
+    <b>Server7AngularKarma</b> = Express + EJS + angular tests using karma (they're awesome)
   </li>
   
   <li>
@@ -59,6 +59,11 @@ NodePractice
   <li>
     <b>Server12Mongoose</b> = MongoDB module called mongoose
   </li>
+  
+  <li>
+    <b>Server13MochaTesting</b> = Grunt + Mocha + chai + supertest
+  </li>
+  
 </ul>
 
 <h3>Dev Tips</h3>
