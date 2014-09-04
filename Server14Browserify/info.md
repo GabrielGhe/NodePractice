@@ -34,6 +34,32 @@ touch .bowerrc
 
 <p>Step 3</p>
 ```javascript
+// ### in bower.json ###
+{
+    "name": "Server14Browserify",
+    "version": "0.0.1",
+    "dependencies": {}
+}
+
+
+// ### in .bowerrc ###
+{
+    "directory": "public/bower_components"
+}
+```
+
+<p>Step 4</p>
+```javascript
+// ### in package.json ###
+
+// add the following
+"browserify" : {
+  "transform": ["debowerify"]
+}
+```
+
+<p>Step 5</p>
+```javascript
 // ### in Gruntfile.js ###
 
 module.exports = function(grunt) {
@@ -57,4 +83,28 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['clean', 'browserify:client']);
 };
+```
+
+<p>Step 6</p>
+```javascript
+// ### in public/javascripts/index.js ###
+
+// you can now require node modules or bower modules, or even other js files
+var unique = require('uniq');
+var $ = require("jquery");
+
+var data = [1, 2, 2, 3, 4, 5, 5, 5, 6];
+
+console.log($("body").html());
+console.log(unique(data));
+```
+
+
+<p>Step 7</p>
+```shell
+### in Command Line ###
+
+// running this will generate a build.js file that contains all the js you need (jquery + uniq + index.js)
+// simply make a script that with that file as the src to use it
+grunt
 ```
