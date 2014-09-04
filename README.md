@@ -79,7 +79,7 @@ NodePractice
   <li><a href="http://code-worrier.com/blog/git-branch-in-bash-prompt/">See what branch you're on in Command Line</a></li>
 </ul>
 
-<p>put the following in you terminal (or your .bash_profile) for awesomeness </p>
+<p>put the following in you terminal (or your .bash_profile) for awesomeness (adding color)</p>
 ```shell
 PS1="\\[\e[1;32m\]\h\[\e[1;33m\]:\W\[\033[1;31m\]\$(__git_ps1)\e[1;37m\]\\n\$ "
 ```
