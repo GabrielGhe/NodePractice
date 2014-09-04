@@ -22,4 +22,39 @@ npm install --save-dev grunt-contrib-clean
 npm install --save-dev grunt-browserify
 ```
 
+<p>Step 2</p>
+```shell
+### Command Line ###
 
+# Create a Gruntfile.js
+touch Gruntfile.js
+touch bower.json
+touch .bowerrc
+```
+
+<p>Step 3</p>
+```javascript
+// ### in Gruntfile.js ###
+
+module.exports = function(grunt) {
+  require('load-grunt-tasks')(grunt);
+  grunt.initConfig({
+    // will clean
+    clean: {
+        build: {
+            src: ['public/javascripts/build.js']
+        }
+    },
+
+    // will browserify all the js files
+    browserify: {
+        client: {
+            src: ['public/javascripts/**/*.js'],
+            dest: 'public/javascripts/build.js'
+        }
+    }
+  });
+
+  grunt.registerTask('default', ['clean', 'browserify:client']);
+};
+```
