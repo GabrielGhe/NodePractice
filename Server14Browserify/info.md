@@ -104,7 +104,7 @@ console.log(unique(data));
 ```shell
 ### in Command Line ###
 
-// running this will generate a build.js file that contains all the js you need (jquery + uniq + index.js)
-// simply make a script that with that file as the src to use it
+# running this will generate a build.js file that contains all the js you need (jquery + uniq + index.js)
+# simply make a script that with that file as the src to use it
 grunt
 ```
