@@ -104,7 +104,37 @@ console.log(unique(data));
 ```shell
 ### in Command Line ###
 
-# running this will generate a build.js file that contains all the js you need (jquery + uniq + index.js)
+# running this will generate a build.js file
+# that contains all the js you need (jquery + uniq + index.js)
 # to use it, simply make a script with that file as the src
 grunt
+```
+
+<h3>How to use</h3>
+
+<p>After installing the modules you want to use (using bower or npm), you simply require them in your file</p>
+```javascript
+
+// ### in public/javascripts/index.js ###
+
+var unique = require('uniq');               // node module
+var $ = require('jquery');                  // bower module
+var sayMyName = require('./sayMyName');     // own module
+
+var data = [1, 2, 2, 3, 4, 5, 5, 5, 6];
+
+console.log("'Uniq' node module", unique(data));
+console.log("'jQuery' bower module", $('body').html());
+console.log("'sayMyName', own module", sayMyName());
+```
+
+<p>To make your own file into a module, you use module.exports like you would in node</p>
+
+```javascript
+
+// ### in public/javascripts/sayMyName.js ###
+
+module.exports = function(){
+    return "This is sparta";
+};
 ```

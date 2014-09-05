@@ -5,7 +5,7 @@ NodePractice
   Practicing node and some npm modules.
 </p>
 <p>
-  Check out the example projects inside each folder. Some projects have a info.md file that describes how to install/use the modules.
+  Check out the example projects inside each folder. Some projects have a <b>info.md</b> file that describes how to install/use the modules.
 </p>
 
 <ul>
@@ -37,31 +37,35 @@ NodePractice
   </li>
   
   <li>
-    <b>Server7AngularKarma</b> = Express + EJS + angular tests using karma (they're awesome)
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server7AngularKarma">Server7AngularKarma</a></b> = Express + EJS + angular tests using karma (they're awesome)
   </li>
   
   <li>
-    <b>Server8Bower</b> = Bower
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server8Bower">Server8Bower</a></b> = Bower
   </li>
   
   <li>
-    <b>Server9Less</b> = Less-Middleware
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server9Less">Server9Less</a></b> = Less-Middleware
   </li>
   
   <li>
-    <b>Server10Grunt</b> = Grunt + js uglifying + css minification
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server10Grunt">Server10Grunt</a></b> = Grunt + js uglifying + css minification
   </li>
   
   <li>
-    <b>Server11AngularMin</b> = minification of angularjs
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server11AngularMin">Server11AngularMin</a></b> = minification of angularjs
   </li>
   
   <li>
-    <b>Server12Mongoose</b> = MongoDB module called mongoose
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server12Mongoose">Server12Mongoose</a></b> = MongoDB module called mongoose
   </li>
   
   <li>
-    <b>Server13MochaTesting</b> = Grunt + Mocha + chai + supertest
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server13MochaTesting">Server13MochaTesting</a></b> = Grunt + Mocha + chai + supertest
+  </li>
+  
+  <li>
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server14Browserify">Server14Browserify</a></b> = Grunt + browserify
   </li>
   
 </ul>
@@ -75,7 +79,7 @@ NodePractice
   <li><a href="http://code-worrier.com/blog/git-branch-in-bash-prompt/">See what branch you're on in Command Line</a></li>
 </ul>
 
-<p>put the following in you terminal (or your .bash_profile) for awesomeness </p>
+<p>put the following in you terminal (or your .bash_profile) for awesomeness (adding color)</p>
 ```shell
 PS1="\\[\e[1;32m\]\h\[\e[1;33m\]:\W\[\033[1;31m\]\$(__git_ps1)\e[1;37m\]\\n\$ "
 ```
