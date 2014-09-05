@@ -30,7 +30,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 app.get('/', routes.index);
-app.get('/good', passport.authenticate('google'), routes.good);
+app.get('/good', routes.good);
 app.get('/bad', routes.bad);
 
 // ------------------ Passport ------------------
