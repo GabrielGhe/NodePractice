@@ -16,9 +16,12 @@ exports.index = function(req, res){
     var tbody = $('#CSE').next().find("tbody");
     var rows = tbody.find("tr");
 
+    _.each(rows, function(row) {
+      var nameAnchor = row.find("th").find("a");
+      var link = nameAnchor.href;
+      var name = nameAnchor.text();
 
-
-    // Get name + link
-    // Get title
+      console.log(name + " " + link);
+    });
   });
 };

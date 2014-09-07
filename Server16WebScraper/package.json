@@ -10,6 +10,7 @@
     "ejs": "*",
     "request": "~2.42.0",
     "cheerio": "~0.17.0",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "nodemon": "~1.2.1"
   }
 }
