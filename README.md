@@ -68,6 +68,10 @@ NodePractice
     <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server14Browserify">Server14Browserify</a></b> = Grunt + browserify
   </li>
   
+  <li>
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server15Passport">Server15Passport</a></b> = PassportJS with Google
+  </li>
+  
 </ul>
 
 <h3>Dev Tips</h3>
