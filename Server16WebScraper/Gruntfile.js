@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         src: ['scrape/index.js'],
         options: {
           testName: 'scrapping',
-          hostname: '127.0.0.1',
+          hostname: 'localhost',
           port:   '4444',
           usePromises: true,
           autoInstall: true,
