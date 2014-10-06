@@ -20,3 +20,11 @@ MyApp.config(["$routeProvider", "$locationProvider",
     $locationProvider.html5Mode(true);
   }
 ]);
+
+MyApp.controller("homeCtrl", ["$scope", function($scope) {
+  // do stuff
+}]);
+
+MyApp.controller("idCtrl", ["$scope", function($scope) {
+  // do more stuff
+}]);
