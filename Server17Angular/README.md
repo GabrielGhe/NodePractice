@@ -66,11 +66,6 @@ var MyApp = angular.module("MyApp", ["ngRoute"]);
 MyApp.config(["$routeProvider", "$locationProvider",
   function($routeProvider, $locationProvider) {
     $routeProvider
-    
-      .when("/:id", {
-        templateUrl: "partials/partialId.html",
-        controller: "idCtrl"
-      })
       
       .when("/", {
         templateUrl: "partials/home.html",
@@ -88,4 +83,25 @@ MyApp.config(["$routeProvider", "$locationProvider",
 // add controllers
 ```
 
+
+<p>We now need to add controllers that will handle what happens when someone goes to one of those routes</p>
+
+```javascript
+// ### in public/javascripts/index.js ###
+
+//at the bottom of the file add...
+MyApp.controller("homeCtrl", ["$scope", function($scope) {
+  // do stuff
+}]);
+```
+
+<p>Ok we have everything set up, but we don't have a partial to display, what's in home.html?</p>
+
+```html
+<!-- ### in public/partials/home.html ### -->
+
+<p>This is the home partial that will display for the home route '/'</p>
+```
+
+<p>Done!</p>
 
