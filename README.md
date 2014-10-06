@@ -5,7 +5,7 @@ NodePractice
   Practicing node and some npm modules.
 </p>
 <p>
-  Check out the example projects inside each folder. Some projects have a <b>info.md</b> file that describes how to install/use the modules.
+  Check out the example projects inside each folder. Some projects have a <b>README.md</b> file that describes how to install/use the modules.
 </p>
 
 <ul>
