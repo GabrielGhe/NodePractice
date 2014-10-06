@@ -5,10 +5,6 @@ var MyApp = angular.module("MyApp", ["ngRoute"]);
 MyApp.config(["$routeProvider", "$locationProvider",
   function($routeProvider, $locationProvider) {
     $routeProvider
-      .when("/:id", {
-        templateUrl: "partials/partialId.html",
-        controller: "idCtrl"
-      })
       .when("/", {
         templateUrl: "partials/home.html",
         controller: "homeCtrl"
@@ -23,8 +19,4 @@ MyApp.config(["$routeProvider", "$locationProvider",
 
 MyApp.controller("homeCtrl", ["$scope", function($scope) {
   // do stuff
-}]);
-
-MyApp.controller("idCtrl", ["$scope", function($scope) {
-  // do more stuff
 }]);
