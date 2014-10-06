@@ -72,6 +72,10 @@ NodePractice
     <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server15Passport">Server15Passport</a></b> = PassportJS with Google
   </li>
   
+  <li>
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server17Angular">Server17Angular</a></b> = AngularJS
+  </li>
+  
 </ul>
 
 <h3>Dev Tips</h3>
