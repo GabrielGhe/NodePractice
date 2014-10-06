@@ -2,6 +2,7 @@
   "name": "Server17Angular",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "~1.2.26"
+    "angular": "~1.2.26",
+    "angular-route": "~1.2.26"
   }
 }
