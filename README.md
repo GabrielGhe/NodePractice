@@ -76,6 +76,10 @@ NodePractice
     <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server17Angular">Server17Angular</a></b> = AngularJS
   </li>
   
+  <li>
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server18React">Server18React</a></b> = AngularJS
+  </li>
+  
 </ul>
 
 <h3>Dev Tips</h3>
