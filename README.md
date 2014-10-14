@@ -77,7 +77,7 @@ NodePractice
   </li>
   
   <li>
-    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server18React">Server18React</a></b> = AngularJS
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server18React">Server18React</a></b> = ReactJS
   </li>
   
 </ul>
