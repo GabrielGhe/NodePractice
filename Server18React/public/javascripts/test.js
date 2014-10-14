@@ -2,6 +2,6 @@
 "use strict"
 
 React.renderComponent(
-  <h1>I am printing the title from react, works!</h1>,
+  React.DOM.h1(null, "I am printing the title from react, works!"),
   document.getElementById('test')
 );
