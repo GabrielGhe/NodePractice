@@ -8,3 +8,5 @@ var PersonApp = React.createClass({
     );
   }
 });
+
+React.renderComponent(<PersonApp />, document.getElementById('first'));
