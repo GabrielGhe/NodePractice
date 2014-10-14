@@ -7,39 +7,43 @@ var data = [
   {first:"Ja", last: "Ky"}
 ];
 
-var PersonApp = React.createClass({
-  render: function(){
-    return (
-      <div>
-        <h1>This is the person App</h1>
-        <PersonList data=this.props.data />
-      </div>
-    );
-  }
-});// End PersonApp
-
-
-var PersonList = React.createClass({
-  render: function(){
-    var people = this.props.data.map(function(person){
-      return (
-        <Person first={person.first} last={person.last} />
-      );
-    });// End People
-
-
-  }
-});// End PersonList
-
 
 var Person = React.createClass({
   render: function(){
     return (
       <div>
-        {this.props.first} - {this.props.last}
+        <h2>{this.props.last}, {this.props.first}</h2>
+      </div>
+    )
+  }
+});// End Person
+
+
+var PersonList = React.createClass({
+  render: function(){
+    var people = this.props.data.map(function(person){
+      return <Person first={person.first} last={person.last} />
+    });// End People
+
+    return (
+      <div>
+        {people}
       </div>
     );
   }
-});// End Person
+});// End PersonList
+
+
+var PersonApp = React.createClass({
+  render: function(){
+    return (
+      <div>
+        <h1>This is the person App</h1>
+        <PersonList data={this.props.data} />
+      </div>
+    );
+  }
+});// End PersonApp
+
 
 React.renderComponent(<PersonApp data={data} />, document.getElementById('first'));
