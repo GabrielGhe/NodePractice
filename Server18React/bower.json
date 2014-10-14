@@ -1,0 +1,7 @@
+{
+  "name": "Server18React",
+  "version": "0.0.1",
+  "dependencies": {
+    "react": "~0.11.2"
+  }
+}
