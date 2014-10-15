@@ -1,11 +1,11 @@
 /*** @jsx React.DOM */
 "use strict";
 
-var data = [
-  {first:"Vush", last: "Ky"},
-  {first:"Dai", last: "Sy"},
-  {first:"Ja", last: "Ky"}
-];
+// var data = [
+//   {first:"Vush", last: "Ky"},
+//   {first:"Dai", last: "Sy"},
+//   {first:"Ja", last: "Ky"}
+// ];
 
 
 var Person = React.createClass({displayName: 'Person',
@@ -35,15 +35,36 @@ var PersonList = React.createClass({displayName: 'PersonList',
 
 
 var PersonApp = React.createClass({displayName: 'PersonApp',
+  getInitialState: function(){
+    return { data: [], first:"", last:"" };
+  },
+  onChangeFirst: function(e){
+    this.setState({first: e.target.value});
+  },
+  onChangeLast: function(e){
+    this.setState({last: e.target.value});
+  },
+  handleSubmit: function(e){
+    e.preventDefault();
+    this.state.data.push({ first:this.state.first, last:this.state.last});
+    this.setState({first:'', last:''});
+  },
+
   render: function(){
     return (
       React.DOM.div(null, 
         React.DOM.h1(null, "This is the person App"),
-        PersonList( {data:this.props.data} )
+        React.DOM.form( {onSubmit:this.handleSubmit}, 
+          React.DOM.input( {type:"text", value:this.state.first, onChange:this.onChangeFirst} ),
+          React.DOM.input( {type:"text", value:this.state.last, onChange:this.onChangeLast} ),
+          React.DOM.button( {type:"submit"}, "Add")
+        ),
+
+        PersonList( {data:this.state.data} )
       )
     );
   }
 });// End PersonApp
 
 
-React.renderComponent(PersonApp( {data:data} ), document.getElementById('first'));
+React.renderComponent(PersonApp(null ), document.getElementById('first'));
