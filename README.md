@@ -80,6 +80,10 @@ NodePractice
     <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server18React">Server18React</a></b> = ReactJS
   </li>
   
+  <li>
+    <b><a href="https://github.com/GabrielGhe/NodePractice/tree/master/Server19ReactMore">Server19ReactMore</a></b> = ReactJS Components
+  </li>
+  
 </ul>
 
 <h3>Dev Tips</h3>
