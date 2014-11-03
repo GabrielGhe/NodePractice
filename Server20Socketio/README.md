@@ -23,7 +23,7 @@ bower install --save jquery
 </p>
 
 ```html
-<!-- ### in index.html/index.ejs ### -->
+<!-- ### in views/index.ejs or an html file ### -->
 <script type='text/javascript' src='/bower_components/socket.io-client/socket.io.js'></script>
 <script type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js'></script>
 <script type='text/javascript' src='/javascripts/index.js'></script>
@@ -47,4 +47,45 @@ bower install --save jquery
     console.log(msg);
   });
 })(jQuery);
+```
+
+<p>
+  Now we need to setup the server.
+</p>
+```javascript
+// ### in app.js ###
+
+// at the end of the file
+var io = require('socket.io')(server);
+routes.init(io);
+```
+
+<p>
+  We need to tell socket.io on the server side what to do, so create a function to handle that.
+  I put that method in routes/index.js but you can put it anywhere.
+</p>
+```javascript
+// ### in routes/index.js ###
+
+exports.init = function(io) {
+  // Connect
+  io.on('connection', function(socket){
+    console.log('user connected ' + socket.id);
+
+    // Disconnect
+    socket.on('disconnect', function(){
+      console.log('user disconnected ' + socket.id);
+    });
+
+    // Chat Message event handler
+    socket.on('chat message', function(msg){
+      console.log('user ' + socket.id + ': ' + msg);
+      // Send to everyone except for this socket
+      socket.broadcast.emit('chat message', msg);
+      
+      // Send to everyone including this socket
+      socket.emit('chat message',msg);
+    });
+  });
+};
 ```
