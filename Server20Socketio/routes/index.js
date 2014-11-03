@@ -9,5 +9,9 @@ exports.index = function(req, res){
 };
 
 exports.init = function(io) {
-  
+  // Connect
+  io.on('connection', function(socket){
+    console.log('user connected ' + socket.id);
+
+  });
 };
