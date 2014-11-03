@@ -17,6 +17,7 @@ npm install --save bower
 bower install --save socket.io-client
 bower install --save jquery
 ```
+<h3><b>CLIENT</b></h3>
 
 <p>
   Add jquery and socket.io to your html page
@@ -48,6 +49,8 @@ bower install --save jquery
   });
 })(jQuery);
 ```
+
+<h3><b>SERVER</b></h3>
 
 <p>
   Now we need to setup the server.
