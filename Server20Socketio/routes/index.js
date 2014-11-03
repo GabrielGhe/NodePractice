@@ -22,7 +22,7 @@ exports.init = function(io) {
     socket.on('chat message', function(msg){
       console.log('user ' + socket.id + ': ' + msg);
       // Send to everyone except for this socket
-      socket.broadcast.emit('Hello from ' + socket.id);
+      socket.broadcast.emit('chat message', msg);
     });
   });
 };
