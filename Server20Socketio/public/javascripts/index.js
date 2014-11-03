@@ -1,6 +1,6 @@
 'use strict';
 
 (function($){
-  // Document loaded
-  alert('Hello');
+  var socket = io();
+  socket.emit('chat message', 'I\'m saying things from client');
 })(jQuery);
