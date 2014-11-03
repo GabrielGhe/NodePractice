@@ -1,0 +1,8 @@
+{
+  "name": "Server20Socketio",
+  "version": "0.0.1",
+  "dependencies": {
+    "socket.io-client": "~1.2.0",
+    "jquery": "~2.1.1"
+  }
+}
