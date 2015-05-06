@@ -101,5 +101,5 @@ NodePractice
 
 <p>put the following in you terminal (or your .bash_profile) for awesomeness (adding color)</p>
 ```shell
-PS1="\\[\e[1;32m\]\h\[\e[1;33m\]:\W\[\033[1;31m\]\$(__git_ps1)\e[1;37m\]\\n\$ "
+PS1="\e[32m\]\u:\e[33m\]\w\e[31m\]\$(__git_ps1) \e[35m\][\t]\e[37m\]\\n\$ "
 ```
