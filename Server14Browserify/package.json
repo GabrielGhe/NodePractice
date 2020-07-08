@@ -14,7 +14,7 @@
     "grunt": "~0.4.5",
     "load-grunt-tasks": "~0.6.0",
     "grunt-browserify": "~3.0.1",
-    "bower": "~1.3.9",
+    "bower": "~1.8.8",
     "grunt-contrib-clean": "~0.6.0",
     "debowerify": "~0.8.1"
   },
